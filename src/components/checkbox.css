@@ -29,11 +29,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #181D31;
+  background-color: rgba(35, 143, 215, 0.26);
   -webkit-transition: 0.4s;
   transition: 1s;
 }
-.slider2{background-color: #181D31;}
+.slider2{background-color: rgba(19, 78, 117, 0.432);}
 /* Pintamos la perilla de control o slider usando el selector before */
 .slider:before {
   position: absolute;
@@ -42,7 +42,7 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: #678983;
+  background-color: rgba(35, 143, 215, 0.747);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -54,14 +54,14 @@
   width: 26px;
   left: 30px;
   bottom: 4px;
-  background-color: #678983;
+  background-color: rgba(35, 143, 215, 0.795);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
 /* Cambiamos el color de fondo cuando el checkbox esta activado */
 .Bank:checked + .slider {
-  background-color: #E6DDC4
+  background-color: #ffffffab
 }
 
 /* Deslizamos el slider a la derecha cuando el checkbox esta activado */
@@ -73,7 +73,7 @@
 
 /* Aplicamos efecto de bordes redondeados en slider y en el fondo del slider */
 .Apagador:checked + .slider2 {
-  background-color: #E6DDC4;
+  background-color: #ffffff8a;
 }
 
 /* Deslizamos el slider a la derecha cuando el checkbox esta activado */
