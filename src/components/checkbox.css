@@ -1,0 +1,84 @@
+/* Formateamos el label que servirá de contenedor */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Ocultamos el checkbox html */
+.switch input {
+  display: none;
+}
+.titlecheck {
+  display: grid;
+  margin: 7px;
+  place-content: center;
+}
+.titlecheck h6 {
+  margin: 10px 0;
+
+  font-size: 25px;
+}
+/* Formateamos la caja del interruptor sobre la cual se deslizará la perilla de control o slider */
+.slider,
+.slider2 {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #181D31;
+  -webkit-transition: 0.4s;
+  transition: 1s;
+}
+.slider2{background-color: #181D31;}
+/* Pintamos la perilla de control o slider usando el selector before */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #678983;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider2:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 30px;
+  bottom: 4px;
+  background-color: #678983;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+/* Cambiamos el color de fondo cuando el checkbox esta activado */
+.Bank:checked + .slider {
+  background-color: #E6DDC4
+}
+
+/* Deslizamos el slider a la derecha cuando el checkbox esta activado */
+.Bank:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Aplicamos efecto de bordes redondeados en slider y en el fondo del slider */
+.Apagador:checked + .slider2 {
+  background-color: #E6DDC4;
+}
+
+/* Deslizamos el slider a la derecha cuando el checkbox esta activado */
+.Apagador:checked + .slider2:before {
+  -webkit-transform: translateX(-26px);
+  -ms-transform: translateX(-26px);
+  transform: translateX(-26px);
+}
