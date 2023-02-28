@@ -105,7 +105,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   text-align: center;
   margin: 1.5vh auto;
   padding: 8px;
-  font-size: 2vw;
+  font-size: 25px;
   display: grid;
   place-content: center;
 }
